@@ -11,7 +11,10 @@
 ### 1. Быстрый старт
 
 Для старта проекта необходимо:
-1) Клонировать репозиторий: `git clone https://github.com/honsour72/eth_wallet.git`
+1) Клонировать репозиторий:
+   ```commandline
+   git clone https://github.com/honsour72/eth_wallet.git
+   ```
 2) Создать базу данных в СУБД `PostgreSQL` а также пользователя, наделить его правами 
 3) Поместить в папку проекта файл `project.toml` следующего содержания
 
@@ -29,11 +32,26 @@
         user = user
         password = password
     ```
-4. Создать виртуальное окружение: `python3.11 -m venv eth_env`
-5. Установить зависимости: `pip install -r requiremetns.txt`
-6. Создать файлы миграции БД: `python manage.py makemigrations wallet_api`
-7. Запустить миграцию БД: `python manage.py migrate`
-8. Запустить проект: `python manage.py runserver`
+4. Создать виртуальное окружение:
+   ```commandline
+   python3.11 -m venv eth_env
+   ```
+5. Установить зависимости:
+   ```commandline
+   pip install -r requiremetns.txt
+   ```
+6. Создать файлы миграции БД:
+   ```commandline
+   python manage.py makemigrations wallet_api
+   ```
+7. Запустить миграцию БД:
+   ```commandline
+   python manage.py migrate
+   ```
+8. Запустить проект:
+   ```commandline
+   python manage.py runserver
+   ```
 
 ### 2. Тестирование
 
